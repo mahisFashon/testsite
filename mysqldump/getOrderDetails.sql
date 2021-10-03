@@ -1,0 +1,1 @@
+SELECT a.order_id, a.parent_id, c.post_excerpt, a.net_total, d.sku, d.max_price FROM wp_wc_order_stats a, wp_wc_order_product_lookup b, wp_posts c, wp_wc_product_meta_lookup d where a.order_id = c.ID and a.order_id = b.order_id and b.product_id = d.product_id
